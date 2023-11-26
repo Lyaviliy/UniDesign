@@ -125,40 +125,43 @@ h3 {
     color: #383838;
 }
 
-.link {
-    color: #FFF;
+.container--links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link, .link:visited {
+    text-align: center;
+    background-color: #2000E7;
+    padding: 18px 78px;
+    border-radius: 10px;
+    box-shadow: 11px 21px 15px 6px rgba(0, 0, 0, 0.25);
     font-family: Poppins;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 246px;
-    height: 72px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    background: #2000E7;
-    box-shadow: 11px 21px 15px 6px rgba(0, 0, 0, 0.25);
-    margin-bottom: 116px;
+    color: #FFF;
 }
 
-.container__text a+a {
+.container-links a + a {
     margin-left: 79px;
 }
 
-.link__another {
-    color: #2000E7;
+.link__another, .link__another:visited {
+    text-align: center;
+    border: 2px solid #2000E7;
+    background: rgba(32, 0, 231, 0.04);
+    padding: 16.5px 58px;
+    border-radius: 10px;
+    box-shadow: 11px 21px 15px 6px rgba(0, 0, 0, 0.25);
     font-family: Poppins;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 246px;
-    height: 72px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    border: 2px solid #2000E7;
-    background: rgba(32, 0, 231, 0.04);
-    box-shadow: 11px 21px 15px 6px rgba(0, 0, 0, 0.25);
+    color: #2000E7;
 }
 
 /*--------About-Me--------*/
@@ -185,6 +188,10 @@ h3 {
     margin-bottom: 26px;
     width: 415px;
     height: 303px;
+}
+
+.container__about a {
+    margin-left: 31px;
 }
 
 .container__img2 {
@@ -301,14 +308,13 @@ text-align: center;
 }
 
 .button {
-    width: 327px;
-    height: 94px;
-    flex-shrink: 0;
+    display: inline-block;
     margin-top: 49px;
 
     background: #FFF;
     box-shadow: 13px 21px 4px 0px rgba(0, 0, 0, 0.25);
     font-size: 32px;
+    padding: 23px 98px;
 }
 
 .container__img3 img {
@@ -398,7 +404,6 @@ min-width: 958px;
 .Subscribe, .Subscribe:visited {
     width: 178px;
     height: 97px;
-    flex-shrink: 0;
     border-radius: 30px;
     background-color: #F965FC;
     text-align: center;
